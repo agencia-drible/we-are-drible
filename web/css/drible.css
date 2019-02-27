@@ -1,0 +1,109 @@
+/* CUSTOM */
+
+h5.titulo-lista{
+  color:#D0AE83 !important;
+  font-size:2rem;
+}
+
+/* BackGround Color change*/
+.bd-navbar {
+  background-color: #000;
+}
+
+/* NavBar HyperLinks Color Change */
+.bd-navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.container img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Changing Headers Color */
+h1,
+h2,
+h3,
+h4{
+  color:#D0AE83;
+}
+
+/*Change Font Size*/
+body {
+  font-size: 1.2rem;
+}
+/* NavBar Height Change*/
+.bd-navbar {
+  min-height: 3rem;
+}
+
+/* Most of the Smartphones Mobiles */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  img{
+    height:100%;
+    width:100%;
+  }
+
+
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 769px) {
+
+  img{
+    height:100%;
+    width:100%;
+  }
+
+}
+
+/* LAPTOP DE 1024 */
+@media (min-width:770px) and (max-width : 1025px) {
+
+  img{
+    height:100%;
+    width:100%;
+  }
+
+}
+
+.ank-link {
+  color: black;
+}
+
+@media (min-width: 768px){
+  .p-md-5 {
+    padding: 2rem!important;
+  }
+}
+
+
+nav.navbar{
+  background-color: #000;
+}
+
+
+a {
+  color: #fff;
+}
+
+
+a:hover {
+  color: #bababa;
+}
+
+
+nav.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+
+a {
+  color: #1A0DAA;
+}
+
+.heightstandbot{
+  height: 200px
+}

@@ -1,0 +1,35 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="quadro2">
+      <h5 class="titulo-lista"> Lista de conteúdos: </h5>
+      <!-- FAZER LISTA -->
+
+      {% set entry = craft.entries.section('webscripts') %}
+      {% for entries in entry %}
+        <a class="separadores" href="#{{entries.slug}}"> {{entries.title}} </a>
+      {% endfor %}
+
+    </div>
+    <hr>
+
+    <!-- MOSTRAR CONTEUDO -->
+
+    {% for entry in craft.entries.section('webscripts') %}
+
+    {% for block in entry.adicionar %}
+
+    <div class="text-center">
+
+      <div id="{{entry.slug}}"> {{ block.conteudo }} </div>
+      <hr>
+    </div>
+
+    {% endfor %}
+
+    {% endfor %}
+
+  </div>
+</main>
+{% endblock %}

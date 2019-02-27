@@ -1,0 +1,17 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-sm-12 col-md-12 mx-auto">
+        <ul>
+          {% set es = craft.entries().section(entry.slug) %}
+          {% for e in es %}
+          <li><p><a href="/{{ entry.title }}/{{ e.slug }}" >{{ e.title }}</a></p></li>
+          {% endfor %}
+        </ul>    
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

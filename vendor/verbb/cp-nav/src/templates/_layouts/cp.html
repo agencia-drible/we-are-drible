@@ -1,0 +1,15 @@
+{% extends "_layouts/cp" %}
+
+{% do view.registerAssetBundle("verbb\\cpnav\\assetbundles\\CpNav\\CpNavAsset") %}
+
+{% set title = 'Control Panel Nav' %}
+
+{% set tabs = {
+    navigation: { label: "Navigation" | t, url: url('cp-nav') },
+} %}
+
+{% if craft.app.getEditionName() != 'Personal' %}
+    {% set tabs = tabs | merge({ layouts: { label: "Layouts" | t, url: url('cp-nav/layouts') } }) %}
+{% endif %}
+
+{% set tabs = tabs | merge({ settings: { label: "Settings" | t, url: url('cp-nav/settings') } }) %}
