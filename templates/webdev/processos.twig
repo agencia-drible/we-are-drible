@@ -1,0 +1,23 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="list-group">
+
+      {% for entry in craft.entries.section('webprocessos') %}
+      {% for block in entry.adicionar %}
+
+      <div class="quadro">
+
+        {{ block.conteudo }}
+
+      </div>
+
+      {% endfor %}
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+</main>
+{% endblock %}

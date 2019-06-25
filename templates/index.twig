@@ -1,0 +1,15 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row">
+        {% for es in craft.entries.section('secinit') %}
+        {% for block in es.matriz %}
+        {{ block.body }}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

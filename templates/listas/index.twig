@@ -1,0 +1,16 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+<div class="container">
+<div class="card">
+        <ul class="list-group list-group-flush">
+          {% set es = craft.entries().section(entry.slug) %}
+          {% for e in es %}
+          <li class= "list-group-item"><a href=/{{ entry.title }}/{{ e.slug }}" ><b>{{ e.title }}</b></a></li>
+         {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

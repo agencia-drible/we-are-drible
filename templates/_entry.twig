@@ -1,0 +1,38 @@
+{% extends 'layout' %}
+{% block main %}
+<body>
+  <main class="bd-masthead" id="content" role="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-1 col-sm-0 col-md-0"></div>
+        <div class="col-lg-10 col-sm-12 col-md-12">
+          <ul>
+            {% set entries = craft.entries().section('secscrpt') %}
+            {% for entry in entries %}
+            <li><p><a href="#{{ entry.slug }}" class="ank-link">{{ entry.title }}</a></p></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-1 col-sm-0 col-md-0"></div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-1 col-sm-0 col-md-0"></div>
+        <div class="col-lg-10 col-sm-12 col-md-12">
+          {% for entry in craft.entries.section('secscrpt') %}
+          {% for block in entry.matriz %}
+          <h1 id="{{ entry.slug }}">{{ entry.title }}</h1><br>
+          {{ block.body }}
+          {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="col-1 col-sm-0 col-md-0"></div>
+      </div>
+    </div>
+  </main>
+</body>
+{% endblock %}

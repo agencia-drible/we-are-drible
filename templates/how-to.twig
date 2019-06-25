@@ -1,0 +1,58 @@
+{% extends 'layout' %}
+{% block main %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-sm-12 col-md-12 mx-auto">
+        <ol>
+          <li>
+            <p><a href="#secao">Criar Sec&ccedil;&atilde;o</a></p>
+          </li>
+          <li>
+            <p><a href="#lista">Criar Lista</a></p>
+          </li>
+          <li>
+            <p><a href="#menu">Criar item no menu</a></p>
+          </li>
+          <li>
+            <p><a href="#entrada">Criar entrada</a></p>
+          </li>
+        </ol>
+        <h1 id="secao">Como adicionar&nbsp; uma nova sec&ccedil;&atilde;o?</h1>
+        <ul>
+          <li>Entrar no painel de controlo e escolher a op&ccedil;&atilde;o <code>Sec&ccedil;&otilde;es</code> o que ira abrir as sec&ccedil;&otilde;es;</li>
+          <li>Dentro das sec&ccedil;&otilde;es clicar em <code>Nova Sec&ccedil;&atilde;o</code> , criar com o nome pretendido e salvar;</li>
+          <li>Depois ainda na pagina das sec&ccedil;&otilde;es clicar em <code>Editar tipos de entrada</code> ;</li>
+          <li>No layout de campos escolher a <code>matriz</code> e salvar;</li>
+        </ul>
+        <h1 id="lista">Como adicionar&nbsp; uma nova Lista?</h1>
+        <ul>
+          <li>Entrar no painel de controlo e escolher a op&ccedil;&atilde;o <code>Listas</code> o que ira abrir as listas;</li>
+          <li>Dentro das listas clicar em <code>Nova Entrada</code>;</li>
+          <li>Introduzir o nome da sec&ccedil;&atilde;o criada e salvar;</li>
+        </ul>
+        <h1 id="menu">Como adicionar um novo item ao menu?</h1>
+        <ul>
+          <li>Entrar no painel de controlo e escolher a op&ccedil;&atilde;o <code>Menu</code>;</li>
+          <li>Clicar em <code>Nova Entrada</code>;</li>
+          <li>Dentro da <code>Nova Entrada</code> introduzir o titulo pretendido em <code>titulo</code>;</li>
+          <li>Introduzir o <code>url</code>;</li>
+          <li>Introduzir o <code>inposition</code> (inposition define a posi&ccedil;&atilde;o do item no menu, 0-10);</li>
+          <li>Introduzir o <code>indrop</code> (inposition define se o item &eacute; dropown);</li>
+          <li>E se pretender ser dropdown adicionar <code>drop</code> e introduzir o nome e o url do drop.</li>
+          <li>Quando estiver terminado clicar em salvar.</li>
+        </ul>
+        <h1 id="entrada">Como adicionar uma nova pagina?</h1>
+        <ul>
+          <li>Entrar no painel de controlo e escolher a op&ccedil;&atilde;o <code>P&aacute;ginas</code> o que ira abrir as entradas;</li>
+          <li>Dentro das entradas escolher a sec&ccedil;&atilde;o pretendida e clicar em <code>Nova Entrada</code>;</li>
+          <li>Dentro da <code>Nova Entrada</code> introduzir o titulo pretendido em <code>titulo</code>;</li>
+          <li>Abrir o body e introduzir o texto;</li>
+          <li>Quando estiver terminado clicar em salvar.</li>
+        </ul>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
